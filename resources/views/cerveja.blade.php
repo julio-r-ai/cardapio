@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cervejas</title>
-</head>
-<body>
-    <h1>Pagina de cerveja</h1>
+<link rel="stylesheet" href="/css/app.css">
 
-    <p>Meu nome é {{$nome}}</p>
+@extends('layouts.main')
 
-</body>
-</html>
+@section('title', 'Cervejas')
+
+@section('content')
+
+<div class="general">
+    <h1>Pagina serveja</h1>
+</div>
