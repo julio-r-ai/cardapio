@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drinks</title>
-</head>
-<body>
-    <h1>Pagina drinks</h1>
-</body>
-</html>
+<link rel="stylesheet" href="/css/app.css">
+
+@extends('layouts.main')
+
+@section('title', 'Drinks')
+
+@section('content')
+
+<div class="general">
+    <h1>Pagina de Drinks</h1>
+</div>

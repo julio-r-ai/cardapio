@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energéticos</title>
-</head>
-<body>
-    <h1>Págiana Energéticos</h1>
-</body>
-</html>
+<link rel="stylesheet" href="/css/app.css">
+
+@extends('layouts.main')
+
+@section('title', 'Energeticos')
+
+@section('content')
+
+<div class="general">
+    <h1>Pagina Energeticos</h1>
+</div>

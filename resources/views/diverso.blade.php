@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diversos</title>
-</head>
-<body>
+<link rel="stylesheet" href="/css/app.css">
+
+@extends('layouts.main')
+
+@section('title', 'Diversos')
+
+@section('content')
+
+<div class="general">
     <h1>Pagina Diversos</h1>
-</body>
-</html>
+</div>

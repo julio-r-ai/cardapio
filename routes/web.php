@@ -14,7 +14,7 @@ Route::get('/diverso', function () {
     return view('diverso'); 
 });
 
-Route::get('/drink', function () {
+Route::get('/drinks', function () {
     return view('drinks'); 
 });
 

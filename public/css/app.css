@@ -61,11 +61,41 @@ body{
   margin-bottom: 20px;
 }
 
-.sidBar li ul:hover{
+.sidBar a{
+  text-decoration: none;
+  color: rgba(255, 140, 0, 0.575);
+}
+
+.sidBar a:hover{
   font-size: 30px;
   color: #a6a6a6;
 }
 
+.general{
+  margin: 110px 10px 30px 250px;
+}
+
 .general h1{
-  font-size: 500px;
+  font-size: 35px;
+  color: black;
+}
+
+.card{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 30px;
+  margin-top: 20px;
+}
+
+.card img{
+  width: 200px;
+}
+.card button{
+  width: 80px;
+}
+
+.card-inter{
+  display: flex;
 }

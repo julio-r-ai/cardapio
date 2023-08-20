@@ -18,16 +18,16 @@
         <div>
             <li>
                 <ul><a href="/">Cervejas</a></ul>
-                <ul><a href=""></a>Coquetel</ul>
-                <ul>Diversos</ul>
-                <ul>Drinks</ul>
-                <ul>Energeticos</ul>
-                <ul>Petiscos</ul>
-                <ul>Redfrigerantes</ul>
-                <ul>Sobremesa</ul>
-                <ul>Suco</ul>
-                <ul>Sushi</ul>
-                <ul>Vinho</ul>
+                <ul><a href="/coquetel">Coquetel</a></ul>
+                <ul><a href="/diverso">Diversos</a></ul>
+                <ul><a href="/drinks">Drinks</a></ul>
+                <ul><a href="/energetico">Energetico</a></ul>
+                <ul><a href="/petisco">Petiscos</a></ul>
+                <ul><a href="/refrigerante">Refrigerantes</a></ul>
+                <ul><a href="/sobremesa">Sobremesa</a></ul>
+                <ul><a href="/suco">Suco</a></ul>
+                <ul><a href="/sushi">Sushi</a></ul>
+                <ul><a href="/vinho">Vinho</a></ul>
             </li>
         </div>
     </div>
