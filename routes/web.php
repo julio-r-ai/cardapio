@@ -45,3 +45,7 @@ Route::get('/sushi', function () {
 Route::get('/vinho', function () {
     return view('vinho'); 
 });
+
+Route::get('/login', function () {
+    return view('login'); 
+});
