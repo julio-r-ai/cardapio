@@ -1,8 +1,10 @@
 <link rel="stylesheet" href="/css/app.css">
 
-@section('title', 'Drinks')
+@extends('layouts.main')
 
-@section('content')
+@section('title', 'Login')
+
+
 
 <div class="login">
 
