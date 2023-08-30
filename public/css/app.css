@@ -132,9 +132,35 @@ form button{
 
 /* Admin */
 
-.headerAdmin{
-  
+.registerAdmin{
+  background-color: #000000;
+  color: #DCDCDC;
+  font-size: 20px;
+  padding: 30px 30px 30px 30px;
 }
+
+.registerAdmin input{
+  width: 100%;
+  height: 35px;
+  font-size: 18px;
+  background-color: white;
+}
+
+.registerAdmin select{
+  width: 100%;
+  height: 35px;
+  font-size: 18px;
+}
+
+.registerAdmin button{
+  background-color: rgb(122, 211, 122);
+  color: white;
+  font-size: 20px;
+  width: 200px;
+
+}
+
+/* Tabela */
 
 table, th, td{
   border: 1px solid #eae4e4;
@@ -157,4 +183,28 @@ th, td{
 th{
   height: 40px;
   vertical-align: bottom;
+}
+
+#view{
+  background-color: rgb(96, 96, 255);
+  color: white;
+  width: 80px;
+  height: 30px;
+  font-size: 18px;
+}
+
+#edit{
+  background-color: rgb(255, 255, 71);
+  color: white;
+  width: 80px;
+  height: 30px;
+  font-size: 18px;
+}
+
+#delete{
+  background-color: rgb(255, 108, 108);
+  color: white;
+  width: 80px;
+  height: 30px;
+  font-size: 18px;
 }

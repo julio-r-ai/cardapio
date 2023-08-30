@@ -1,10 +1,6 @@
 <link rel="stylesheet" href="/css/app.css">
 
-@extends('layouts.main')
-
 @section('title', 'Login')
-
-
 
 <div class="login">
 
@@ -25,7 +21,6 @@
 
     <div class="divButton">
       <button type="submit" id="buttonEntrar">Entrar</button>
-      <button id="buttonCadastrar">Cadastrar</button>
     </div>
   </form>
    

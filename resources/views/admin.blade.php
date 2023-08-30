@@ -6,8 +6,10 @@
 
 <div class="admin">
 
-    <div class="headerAdmin">
-        <div></div>
+    <div class="registerAdmin">
+
+        <div><h1>Bem vindo! Administrador</h1></div>
+        
         <form action="">
             <div>
                 <label for="">Adicione uma foto</label>
@@ -38,6 +40,7 @@
                     <option value="9">Vinho</option>
                 </select>
             </div>
+            <div><button type="submit">Adicionar</button></div>
         </form>
     </div>
 
@@ -57,11 +60,9 @@
                      <td>R$ 6,00</td>
                     <td>CERVEJA</td>
                     <td>
-                        <Link>
-                            <button className="buttonView" >Visualizar</button>
-                     </Link>
-                        <button className="buttonEdit">Editar</button>
-                        <button className="buttonDelete">Excluir</button>
+                        <button className="buttonView" id="view">Visualizar</button>
+                        <button className="buttonEdit" id="edit">Editar</button>
+                        <button className="buttonDelete" id="delete">Excluir</button>
                     </td>
                 </tr>  
         </tbody>
