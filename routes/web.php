@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Route; 
 
-Route::get('/', function () {
-    return view('cerveja'); 
-});
+use App\Http\Controllers\EventController;
+ 
+Route::get('/', [EventController::class, 'index']);
 
 Route::get('/coquetel', function () {
     return view('coquetel'); 
@@ -22,9 +22,7 @@ Route::get('/energetico', function () {
     return view('energetico'); 
 });
 
-Route::get('/petisco', function () {
-    return view('petisco'); 
-});
+Route::get('/petisco', function(){return view('petisco');});
 
 Route::get('/refrigerante', function () {
     return view('refrigerante'); 
@@ -44,7 +42,7 @@ Route::get('/sushi', function () {
 
 Route::get('/vinho', function () {
     return view('vinho'); 
-});
+}); 
 
 Route::get('/login', function () {
     return view('login'); 
