@@ -2,18 +2,18 @@
 
 use Illuminate\Support\Facades\Route; 
 
-use App\Http\Controllers\EventController;
+use App\Http\Controllers\ProductController;
  
-Route::get('/', [EventController::class, 'cerveja']);
-Route::get('/coquetel', [EventController::class, 'coquetel']);
-Route::get('/diverso', [EventController::class, 'diverso']);
-Route::get('/drinks', [EventController::class, 'drinks']);
-Route::get('/energetico', [EventController::class, 'energetico']);
+Route::get('/', [ProductController::class, 'cerveja']);
+Route::get('/coquetel', [ProductController::class, 'coquetel']);
+Route::get('/diverso', [ProductController::class, 'diverso']);
+Route::get('/drinks', [ProductController::class, 'drinks']);
+Route::get('/energetico', [ProductController::class, 'energetico']);
 Route::get('/petisco', [EventController::class, 'petisco']);
-Route::get('/refrigerante', [EventController::class, 'refrigerante']);
-Route::get('/sobremesa', [EventController::class, 'sobremesa']);
-Route::get('/suco', [EventController::class, 'suco']);
-Route::get('/sushi', [EventController::class, 'sushi']);
-Route::get('/vinho', [EventController::class, 'vinho']);
-Route::get('/login', [EventController::class, 'login']);
-Route::get('/admin', [EventController::class, 'admin']);
+Route::get('/refrigerante', [ProductController::class, 'refrigerante']);
+Route::get('/sobremesa', [ProductController::class, 'sobremesa']);
+Route::get('/suco', [ProductController::class, 'suco']);
+Route::get('/sushi', [ProductController::class, 'sushi']);
+Route::get('/vinho', [ProductController::class, 'vinho']);
+Route::get('/login', [ProductController::class, 'login']);
+Route::get('/admin', [ProductController::class, 'admin']);
