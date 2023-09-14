@@ -49,12 +49,4 @@ class ProductController extends Controller
     public function vinho(){
         return view('vinho');
     }
-
-    public function login(){
-        return view('login');
-    }
-
-    public function admin(){
-        return view('admin');
-    }
 }
