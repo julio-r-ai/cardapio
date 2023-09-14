@@ -4,10 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use app\Models\Product;
+
 class EventController extends Controller
 {
     public function cerveja(){
-        return view('cerveja');
+
+       /*  $products = Product::all(); */ 
+  
+        return view('cerveja'/* , ['products' => $products] */);  
     }
 
     public function coquetel(){

@@ -27,17 +27,17 @@
                 <label for="">Categoria</label>
                 <select name="categore">
                     <option selected disabled>Selecione</option>
-                    <option value="9">Cerveja</option>
-                    <option value="8">Coquetel</option>
-                    <option value="7">Diversos</option>
-                    <option value="6">Drinks</option>
+                    <option value="1">Cerveja</option>
+                    <option value="2">Coquetel</option>
+                    <option value="3">Diversos</option>
+                    <option value="4">Drinks</option>
                     <option value="5">Energético</option>
-                    <option value="4">Petiscos</option>
-                    <option value="3">Refrigerantes</option>
-                    <option value="2">Sobremesa</option>
-                    <option value="1">Suco</option>
-                    <option value="9">Sushi</option>
-                    <option value="9">Vinho</option>
+                    <option value="6">Petiscos</option>
+                    <option value="7">Refrigerantes</option>
+                    <option value="8">Sobremesa</option>
+                    <option value="9">Suco</option>
+                    <option value="10">Sushi</option>
+                    <option value="11">Vinho</option>
                 </select>
             </div>
             <div><button type="submit">Adicionar</button></div>

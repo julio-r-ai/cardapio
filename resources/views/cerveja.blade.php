@@ -16,7 +16,7 @@
                 <img src="https://m.media-amazon.com/images/I/41P8PNAZ+sL.jpg" alt="imagem">
            </div>
             <div>
-                <h2>Budweiser 600ml</h2>
+                <h2></h2>
                 <h2>R$6,00</h2>
             </div>
         </div>
