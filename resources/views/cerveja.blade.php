@@ -10,19 +10,27 @@
 
     <h1>Cervejas</h1>
 
-    <div class="card">
-        <div class="card-inter">
-           <div>
-                <img src="https://m.media-amazon.com/images/I/41P8PNAZ+sL.jpg" alt="imagem">
-           </div>
-            <div>
-                <h2></h2>
-                <h2>R$6,00</h2>
-            </div>
-        </div>
-        <div>
-            <button>Ver</button>
-        </div>
-    </div>
-    
+    @foreach ($products as $product)
+
+        @if ($product->category == 1)
+           
+            <div class="card">
+                <div class="card-inter">
+                <div>
+                        <img src="{{$product->img}}" alt="imagem">
+                </div>
+                    <div>
+                        
+                        <h2>{{$product->description}}</h2>
+                        <h2>R$ {{$product->price}}</h2>
+                        
+                    </div>
+                </div>
+                <div>
+                    <button>Ver</button>
+                </div>
+            </div> 
+        @endif
+    @endforeach 
+
 </div>
