@@ -9,49 +9,57 @@ use App\Models\Product;
 class ProductController extends Controller
 {
     public function cerveja(){
-
         $products = Product::all();
-
         return view('cerveja', ['products' => $products]);  
     }
 
     public function coquetel(){
-        return view('coquetel');
+        $products = Product::all();
+        return view('coquetel', ['products' => $products]);
     }
 
     public function diverso(){
-        return view('diverso');
+        $products = Product::all();
+        return view('diverso', ['products' => $products]);
     }
 
     public function drinks(){
-        return view('drinks');
+        $products = Product::all();
+        return view('drinks', ['products' => $products]);
     }
 
     public function energetico(){
-        return view('energetico');
+        $products = Product::all();
+        return view('energetico', ['products' => $products]);
     }
 
     public function petisco(){
-        return view('petisco');
+        $products = Product::all();
+        return view('petisco', ['products' => $products]);
     }
 
     public function refrigerante(){
-        return view('refrigerante');
+        $products = Product::all();
+        return view('refrigerante', ['products' => $products]);
     }
 
     public function sobremesa(){
-        return view('sobremesa');
+        $products = Product::all();
+        return view('sobremesa', ['products' => $products]);
     }
 
     public function suco(){
-        return view('suco');
+        $products = Product::all();
+        return view('suco', ['products' => $products]);
     }
 
     public function sushi(){
-        return view('sushi');
+        $products = Product::all();
+        return view('sushi', ['products' => $products]);
     }
 
     public function vinho(){
-        return view('vinho');
+        $products = Product::all();
+        return view('vinho', ['products' => $products]);
     }
 }

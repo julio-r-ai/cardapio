@@ -46,25 +46,28 @@
 
     <table>
     <thead>
-         <tr>
-           <th>ID</th>
-                <th>Foto</th>
-                    <th>Descrição</th>
-                    <th>Preco</th>
-                    <th>Categoria</th>
-                    <th>Ações</th>
-                </tr>
-                    <td>0001</td>
-                    <td>foto</td>
-                    <td>Budweiser</td>
-                     <td>R$ 6,00</td>
-                    <td>CERVEJA</td>
-                    <td>
-                        <button className="buttonView" id="view">Visualizar</button>
-                        <button className="buttonEdit" id="edit">Editar</button>
-                        <button className="buttonDelete" id="delete">Excluir</button>
-                    </td>
-                </tr>  
-        </tbody>
+         
+        <th>ID</th>
+        <th>Foto</th>
+        <th>Descrição</th>
+        <th>Preco</th>
+        <th>Categoria</th>
+        <th>Ações</th>
+
+        @foreach ($products as $product)
+            </tr>
+                <td>{{$product->id}}</td>
+                <td>imagem</td>
+                <td>{{$product->description}}</td>
+                <td>{{$product->price}}</td>
+                <td>{{$product->category}}</td>
+                <td>
+                    <button className="buttonView" id="view">Visualizar</button>
+                    <button className="buttonEdit" id="edit">Editar</button>
+                    <button className="buttonDelete" id="delete">Excluir</button>
+                </td>
+            </tr>  
+        @endforeach  
+    </tbody>
     </table>
 </div>
