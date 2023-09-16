@@ -19,13 +19,13 @@
                 </div>
                     <div>
                         
-                        <h2>{{$product->description}}</h2>
-                        <h2>R$ {{$product->price}}</h2>
+                        <h2 id="descriH2">{{$product->description}}</h2>
+                        <h2 id="descriH3">R$ {{$product->price}}</h2>
                         
                     </div>
                 </div>
                 <div>
-                    <button>Ver</button>
+                    <button id="buttonVer">Ver</button>
                 </div>
             </div> 
         @endif

@@ -14,18 +14,18 @@
            
             <div class="card">
                 <div class="card-inter">
-                <div>
-                        <img src="{{$product->img}}" alt="imagem">
-                </div>
+                    <div>
+                            <img src="{{$product->img}}" alt="imagem">
+                    </div>
                     <div>
                         
-                        <h2>{{$product->description}}</h2>
-                        <h2>R$ {{$product->price}}</h2>
+                        <h2 id="descriH2">{{$product->description}}</h2>
+                        <h2 id="descriH3">R$ {{$product->price}}</h2>
                         
                     </div>
                 </div>
                 <div>
-                    <button>Ver</button>
+                    <button id="buttonVer">Ver</button>
                 </div>
             </div> 
         @endif

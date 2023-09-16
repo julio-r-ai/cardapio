@@ -15,16 +15,16 @@
         @if ($product->category == 0)   
             <div class="card">
                 <div class="card-inter">
-                <div>
-                        <img src="{{$product->img}}" alt="imagem">
-                </div>
                     <div>
-                        <h2>{{$product->description}}</h2>
-                        <h2>R$ {{$product->price}}</h2>                        
+                            <img src="{{$product->img}}" alt="imagem">
+                    </div>
+                    <div>
+                        <h2 id="descriH2">{{$product->description}}</h2>
+                        <h3 id="descriH3">R$ {{$product->price}}</h3>                        
                     </div>
                 </div>
-                <div>
-                    <button>Ver</button>
+                <div >
+                    <button id="buttonVer">Ver</button>
                 </div>
             </div> 
         @endif

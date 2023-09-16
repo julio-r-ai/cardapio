@@ -44,7 +44,7 @@
             <div><button type="submit">Adicionar</button></div>
         </form>
         @if(session('msg'))
-            <div id="msgProduto"><p>{{ session('msg')}}</p></div>
+            <div id="msgProduto"><p>{{session('msg')}}</p></div>
         @endif
     </div>
 
@@ -61,7 +61,7 @@
         @foreach ($products as $product)
             </tr>
                 <td>{{$product->id}}</td>
-                <td>{{$product->img}}</td>
+                <td><img src="{{$product->img}}" alt="imagem"></td>
                 <td>{{$product->description}}</td>
                 <td>{{$product->price}}</td>
                 <td>{{$product->category}}</td>
