@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div>
-                    <button id="buttonVer">Ver</button>
+                    <a href="/showProduto/{{ $product->id }}"><button id="buttonVer">Ver</button></a>
                 </div>
             </div> 
         @endif

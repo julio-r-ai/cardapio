@@ -27,6 +27,7 @@ body{
   z-index: 1;
   top: -100px;
   margin-top: 100px; 
+  border-bottom: 3px solid rgba(255, 140, 0, 0.575);
 }
 
 .header h1{
@@ -293,4 +294,71 @@ th{
 
 td img{
   width: 45px;
+}
+
+/* Show do Produto */
+
+.showProduto{
+  display: flex;
+  flex-direction: column;
+}
+
+.showProduto img{
+  width: 450px;
+}
+
+.headerShow{
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: #000000;
+  color: rgb(247, 156, 0);
+  border-bottom: 3px solid rgb(247, 156, 0);
+}
+
+.productDescri{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #DCDCDC;
+  border-bottom: 3px solid #a6a6a6;
+}
+
+.footerShow{
+  display: flex;
+  justify-content: space-around;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #DCDCDC;
+}
+
+.footerShow button{
+  width: 100px;
+  height: 35px;
+  font-size: 20px;
+  color: #eae4e4;
+  background-color: rgb(202, 62, 62);
+  border: none;
+  font-weight: bolder;
+}
+
+.footerShow button:hover{
+  width: 100px;
+  height: 35px;
+  font-size: 20px;
+  color: #eae4e4;
+  background-color: rgb(202, 62, 62);
+  border: none;
+  font-weight: bolder;
+  box-shadow: 2px 2px 7px 1px rgba(103, 102, 102, 0.718);
+}
+
+.priceShow h2{
+  font-size: 18px;
 }
