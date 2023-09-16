@@ -10,7 +10,7 @@
     <h1>Pagina Energeticos</h1>
     @foreach ($products as $product)
 
-        @if ($product->category == 5)
+        @if ($product->category == 4)
            
             <div class="card">
                 <div class="card-inter">

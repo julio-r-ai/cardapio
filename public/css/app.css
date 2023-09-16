@@ -208,3 +208,8 @@ th{
   height: 30px;
   font-size: 18px;
 }
+
+#msgProduto p{
+  color: green;
+  margin-top: 20px;
+}

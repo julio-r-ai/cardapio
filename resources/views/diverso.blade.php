@@ -10,7 +10,7 @@
     <h1>Pagina Diversos</h1>
     @foreach ($products as $product)
 
-        @if ($product->category == 3)
+        @if ($product->category == 2)
            
             <div class="card">
                 <div class="card-inter">

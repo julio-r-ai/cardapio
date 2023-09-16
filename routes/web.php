@@ -19,3 +19,5 @@ Route::get('/vinho', [ProductController::class, 'vinho']);
 
 Route::get('/login', [AdminController::class, 'login']);
 Route::get('/admin', [AdminController::class, 'admin']);
+
+Route::post('/admin', [AdminController::class, 'store']);
