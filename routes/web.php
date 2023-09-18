@@ -16,7 +16,7 @@ Route::get('/sobremesa', [ProductController::class, 'sobremesa']);
 Route::get('/suco', [ProductController::class, 'suco']);
 Route::get('/sushi', [ProductController::class, 'sushi']);
 Route::get('/vinho', [ProductController::class, 'vinho']);
-Route::get('/showProduto/{id}', [ProductController::class, 'showProduto']);
+Route::get('/showEdit', [ProductController::class, 'edit']);
 
 Route::get('/login', [AdminController::class, 'login']);
 Route::get('/admin', [AdminController::class, 'admin']);
@@ -24,7 +24,10 @@ Route::get('/admin', [AdminController::class, 'admin']);
 Route::post('/admin', [AdminController::class, 'store']);
 Route::post('/loginValidation', [AdminController::class, 'loginValidation']);
 
-Route::delete('/productDelete/{id}', [AdminController::class, 'destroy']);
+Route::delete('/admin/{id}', [ProductController::class, 'destroy']);  
+
+Route::delete('/admin/{id}', [ProductController::class, 'edit']);  
+Route::get('/showProduto/{id}', [ProductController::class, 'showProduto']);
 
 Route::middleware([
     'auth:sanctum',

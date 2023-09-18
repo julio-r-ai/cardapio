@@ -56,7 +56,10 @@
             <th>Descrição</th>
             <th>Preco</th>
             <th>Categoria</th>
+            <th></th>
             <th>Ações</th>
+            <th></th>
+
         </tr>
         @foreach ($products as $product)
             </tr>
@@ -65,15 +68,25 @@
                 <td>{{$product->description}}</td>
                 <td>{{$product->price}}</td>
                 <td>{{$product->category}}</td>
-                <td>
-                    <a href="/showProduto/{{ $product->id }}"><button className="buttonView" id="view">Visualizar</button></a>
-                    <button className="buttonEdit" id="edit">Editar</button>
 
-                    <form action="/admin/{{$product->id}}" method="POST" id="formDelete">
-                        @csrf
-                        @method('DELETE')
-                        <button className="buttonDelete" id="delete" type="submit">Excluir</button>
-                    </form>
+                <td id="buttomAcoes">
+                    <div>
+                        <a href="/showProduto/{{ $product->id }}"><button className="buttonView" id="view">Visualizar</button></a>
+                    </div>
+                </td>
+                <td> 
+                    <div>
+                        <a href="/edit/{{ $product->id }}"><button className="buttonView" id="view">Editar</button></a>
+                    </div>
+                </td>
+                <td>
+                     <div>
+                        <form action="/admin/{{$product->id}}" method="POST" id="formDelete">
+                            @csrf
+                            @method('DELETE')
+                            <button className="buttonDelete" id="delete" type="submit">Excluir</button>
+                        </form>
+                    </div>
                 </td>
             </tr>  
         @endforeach  

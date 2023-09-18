@@ -22,8 +22,6 @@ class AdminController extends Controller
     public function loginValidation(Request $request){
         $admins = Admin::all();
 
-        
-
     }
 
     public function store(Request $request){

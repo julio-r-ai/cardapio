@@ -12,7 +12,7 @@
 }
 
 body{
-  background-color: #a6a6a6;
+  background-color: #d0d0d0;
 }
 
 .header{
@@ -144,7 +144,7 @@ body{
   border-radius: 5px;
 }
 
-#formLogin, #formCadastroProduct input{
+form input{
   width: 100%;
   height: 34px;
   background-color: #a6a6a6;
@@ -153,21 +153,27 @@ body{
   padding-right: 10px;
 }
 
-#formLogin, #formCadastroProduct h2{
+form h2{
   text-align: center;
   color: rgba(255, 140, 0, 0.575);
 }
 
-#formLogin button{
+form button{
   margin-top: 20px;
   height: 34px;
   width: 100%;
   font-size: 15px;
 }
 
-#formDelete{
-  width: 50px;
-  margin: 0px, 0px, 0px, 0px;
+#formDelete button{
+  margin-top: 0px;
+}
+
+#buttomAcoes{
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
 }
 
 /* Admin */
@@ -309,7 +315,7 @@ td img{
 }
 
 .showProduto img{
-  width: 450px;
+  width: 500px;
 }
 
 .headerShow{

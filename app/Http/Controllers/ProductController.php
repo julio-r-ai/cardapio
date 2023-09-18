@@ -70,6 +70,11 @@ class ProductController extends Controller
 
     public function destroy($id){
         Product::findOrFail($id)->delete();
-        return redirect('admin')->with('msg', 'Produto excluido com sucesso!');
+        return redirect('/admin')->with('msg', 'Produto excluido com sucesso!');
+    }
+
+    public function edit($id){
+        $products = Product::findOrFail($id);
+        return view('edit', ['products' => $products]);
     }
 }
