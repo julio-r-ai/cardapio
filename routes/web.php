@@ -22,3 +22,16 @@ Route::get('/login', [AdminController::class, 'login']);
 Route::get('/admin', [AdminController::class, 'admin']);
 
 Route::post('/admin', [AdminController::class, 'store']);
+Route::post('/loginValidation', [AdminController::class, 'loginValidation']);
+
+Route::delete('/productDelete/{id}', [AdminController::class, 'destroy']);
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});

@@ -14,7 +14,7 @@
     </div>
     <div class="footerShow">
         <div>
-            <button>Voltar</button>
+            <a href="javascript:void(0)" onClick="history.go(-1); return false;"><button>Voltar</button></a>
         </div>
         <div id="priceShow">
            <h2> Preço: R$ {{$products->price}}</h2>

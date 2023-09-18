@@ -19,6 +19,13 @@ class AdminController extends Controller
         return view('admin', ['products' => $products]);
     }
 
+    public function loginValidation(Request $request){
+        $admins = Admin::all();
+
+        
+
+    }
+
     public function store(Request $request){
 
         $product = new Product;

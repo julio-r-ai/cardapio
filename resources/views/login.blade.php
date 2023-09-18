@@ -4,7 +4,8 @@
 
 <div class="login">
 
-  <form action="">
+  <form action="/login" method="POST" id="formLogin">
+    @csrf
     <div class="title-login">
       <h2>Fazer login</h2>
     </div>

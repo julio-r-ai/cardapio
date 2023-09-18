@@ -10,7 +10,7 @@
 
         <div><h1>Bem vindo! Administrador</h1></div>
         
-        <form action="/admin" method="POST">
+        <form action="/admin" method="POST" id="formCadastroProduct">
             @csrf
             <div>
                 <label for="">Adicione uma foto</label>
@@ -66,9 +66,14 @@
                 <td>{{$product->price}}</td>
                 <td>{{$product->category}}</td>
                 <td>
-                    <button className="buttonView" id="view">Visualizar</button>
+                    <a href="/showProduto/{{ $product->id }}"><button className="buttonView" id="view">Visualizar</button></a>
                     <button className="buttonEdit" id="edit">Editar</button>
-                    <button className="buttonDelete" id="delete">Excluir</button>
+
+                    <form action="/admin/{{$product->id}}" method="POST" id="formDelete">
+                        @csrf
+                        @method('DELETE')
+                        <button className="buttonDelete" id="delete" type="submit">Excluir</button>
+                    </form>
                 </td>
             </tr>  
         @endforeach  
