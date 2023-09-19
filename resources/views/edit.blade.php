@@ -8,7 +8,7 @@
 
     <div class="registerAdmin">
 
-        <div><h1>Editando o Produto: {{$products->description}}</h1></div>
+        <div><h1>Editando o Produto</h1></div>
         
         <form action="/admin/update/{{$products->id}}" method="POST" id="formCadastroProduct">
             @csrf
@@ -23,7 +23,7 @@
             </div>
             <div>
                 <label for="">Preço</label>
-                <input type="text" name="price" id="price">
+                <input type="text" name="price" id="{{$products->price}}">
             </div>
             <div>
                 <label for="">Categoria</label>
@@ -42,7 +42,7 @@
                     <option value="10">Vinho</option>
                 </select>
             </div>
-            <div><button type="submit">Adicionar</button></div>
+            <div><button type="submit">Editar</button></div>
         </form>
         @if(session('msg'))
             <div id="msgProduto"><p>{{session('msg')}}</p></div>
