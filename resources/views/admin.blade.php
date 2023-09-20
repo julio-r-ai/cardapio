@@ -43,10 +43,11 @@
             </div>
             <div><button type="submit">Adicionar</button></div>
         </form>
-        @if(session('msg'))
-            <div id="msgProduto"><p>{{session('msg')}}</p></div>
-        @endif
     </div>
+
+    @if(session('msg'))
+        <div id="msgProduto"><p>{{session('msg')}}</p></div>
+    @endif
 
     <table>
     <thead>
@@ -69,14 +70,14 @@
                 <td>{{$product->price}}</td>
                 <td>{{$product->category}}</td>
 
-                <td id="buttomAcoes">
+                <td>
                     <div>
-                        <a href="/showProduto/{{ $product->id }}"><button className="buttonView" id="view">Visualizar</button></a>
+                        <a href="/showProduto/{{ $product->id }}" ><button id="view">Visualizar</button></a>
                     </div>
                 </td>
                 <td> 
                     <div>
-                        <a href="/edit/{{ $product->id }}"><button className="buttonView" id="view">Editar</button></a>
+                        <a href="/edit/{{ $product->id }}"><button id="edit">Editar</button></a>
                     </div>
                 </td>
                 <td>
