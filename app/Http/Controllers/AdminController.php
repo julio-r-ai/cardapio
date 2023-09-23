@@ -9,19 +9,10 @@ use App\Models\Admin;
 
 class AdminController extends Controller
 {
-    public function login(){
-        $admins = admin::all();
-        return view('login');
-    }
 
     public function admin(){
         $products = Product::all();
         return view('admin', ['products' => $products]);
-    }
-
-    public function loginValidation(Request $request){
-        $admins = Admin::all();
-
     }
 
     public function store(Request $request){
@@ -46,7 +37,7 @@ class AdminController extends Controller
             $product->img = $imageName;
 
         }*/
-        
+
         $product->save(); 
 
         return redirect('/admin')->with('msg', 'Produto cadastrado com sucesso!');

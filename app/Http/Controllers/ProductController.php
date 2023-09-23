@@ -69,9 +69,9 @@ class ProductController extends Controller
     }
 
     public function edit($id){
-        $products = Product::findOrFail($id); 
+        $products = Product::findOrFail($id);
         return view('edit', ['products' => $products]);
-    }
+    } 
 
     public function update(Request $request){
         Product::findOrFail($request->id)->update($request->all());

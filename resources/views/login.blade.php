@@ -4,7 +4,11 @@
 
 <div class="login">
 
-  <form action="/login" method="POST" id="formLogin">
+  @if(session('msg'))
+    <div id="msgProduto"><p>{{session('msg')}}</p></div>
+  @endif
+
+  <form action="" method="POST" id="formLogin">
     @csrf
     <div class="title-login">
       <h2>Fazer login</h2>
@@ -17,12 +21,13 @@
 
     <div>
       <label for="password">Senha</label>
-      <input type="password" id="email" name="email" placeholder="Digite sua senha...">
+      <input type="password" id="password" name="password" placeholder="Digite sua senha...">
     </div>
 
     <div class="divButton">
       <button type="submit" id="buttonEntrar">Entrar</button>
     </div>
-  </form>
    
+  </form> 
+  
 </div>

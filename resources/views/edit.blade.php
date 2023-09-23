@@ -8,22 +8,22 @@
 
     <div class="registerAdmin">
 
-        <div><h1>Editando o Produto: {{ $products->description }}</h1></div>
+        <div><h1>Editando o Produto: {{ $products->description }} </h1></div>
         
-        <form action="/admin/update/{{$products->id}}" method="POST" id="formCadastroProduct">
+        <form action="/admin/update/{{ $products->id }}" method="POST" id="formCadastroProduct">
             @csrf
             @method('PUT')
             <div>
                 <label for="">Adicione uma foto</label>
-                <input type="text" name="img" id="img" value="{{$products->img}}">
+                <input type="text" name="img" id="img" value="{{ $products->img }}">
             </div>
             <div>
                 <label for="">Descrição</label>
-                <input type="text" name="description"  id="description" value="{{$products->description}}">
+                <input type="text" name="description"  id="description" value="{{ $products->description }}">
             </div>
             <div>
                 <label for="">Preço</label>
-                <input type="text" name="price" id="{{$products->price}}">
+                <input type="text" name="price" id="price" value="{{ $products->price }}">
             </div>
             <div>
                 <label for="">Categoria</label>
